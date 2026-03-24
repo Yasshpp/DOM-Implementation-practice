@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0ede8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+
+
+}
+
+header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#greeting {
+    color: #333;
+    font-size: 3rem;
+}
+
+.boxes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.box {
+    height: 180px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.box.red {
+    background-color: red;
+    color: white;
+}
+
+.box.blue {
+    background-color: blue;
+    color: white;
+}
+
+.box.green {
+    background-color: green;
+    color: white;
+}
+
+.box.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.greeting-card {
+    background-color: white;
+    padding: 28px 24px;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+greeting-card label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+#nameInput {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+#nameInput:focus {
+    border-color: #1a1a1a;
+}
+
+#greetBtn {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#greetBtn:hover {
+    background-color: #444;
+}
